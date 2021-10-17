@@ -65,36 +65,3 @@ h1 {
 #square {
     margin: 25px
 }
-
-@media screen and (max-width: 500px) {
-    .col {
-        max-width: 400px;
-        height: 180px;
-    }
-    #circle,
-    #square {
-        width: 90px;
-        height: 900px;
-        border: 7px solid rgb(26, 24, 24);
-    }
-    #triangle {
-        border-bottom: 90px solid rgb(26, 24, 24);
-        border-left: 45px solid transparent;
-        border-right: 45px solid transparent;
-        width: 0;
-        height: 0;
-        position: relative;
-    }
-    #triangle:before {
-        content: "";
-        width: 0;
-        height: 0;
-        position: absolute;
-        border-bottom: 70px solid rgb(150, 110, 10);
-        border-left: 35px solid transparent;
-        border-right: 35px solid transparent;
-        width: 0;
-        left: -35px;
-        top: 14px;
-    }
-}
